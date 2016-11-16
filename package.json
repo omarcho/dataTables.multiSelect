@@ -1,0 +1,35 @@
+{
+  "name": "datatable.multiselect",
+  "version": "1.0.0",
+  "description": "This is a datatables.net plugin integrated with bootstrap.multiselect in order to filter automatically column.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  },
+  "scripts": {
+    "test": "grunt karma:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarcho/dataTables.multiSelect.git"
+  },
+  "keywords": [
+    "datatable",
+    "datatables.net",
+    "filter",
+    "multiselect"
+  ],
+  "author": "Omar Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omarcho/dataTables.multiSelect/issues"
+  },
+  "homepage": "https://github.com/omarcho/dataTables.multiSelect#readme"
+}
