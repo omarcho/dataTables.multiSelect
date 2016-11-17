@@ -18,9 +18,9 @@ module.exports = function(grunt) {
 		copy: {
             main: {
                 expand: true,
-				cwd:'<%= dirs.libs %>/',
+				cwd:'<%= dirs.src %>/js/',
                 src: ['**'],
-                dest: '<%= dirs.dist %>/',
+                dest: '<%= dirs.dist %>/js/',
             },
 			examples: {
                 expand: true,
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 		},
 		"watch": {
 			"files": "<%= dirs.src %>/js/*.js",
-			"tasks": ["uglify","copy:examples", "copy:test"]
+			"tasks": ["clean:all", "uglify", "copy:main", "copy:examples", "copy:test"]
 		},
 		
 	});
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma');
   
   
-  grunt.registerTask('default', ['clean:all','uglify','copy:examples', 'copy:test']);
+  grunt.registerTask('default', ['clean:all','uglify',"copy:main",'copy:examples', 'copy:test']);
   grunt.registerTask('test', ['karma:unit']);
   grunt.registerTask('w', ['watch']);
  
