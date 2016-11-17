@@ -1,0 +1,51 @@
+{
+  "name": "datatable.multiselect",
+  "version": "1.0.0",
+  "description": "This is a datatables.net plugin integrated with bootstrap.multiselect in order to filter automatically column.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+	"grunt": "~0.4.5",
+    "grunt-banner": "~0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jasmine": "^1.0.3",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "~1.0.1",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-exec": ">0.4.0",
+    "grunt-karma": "~0.10.1",
+    "grunt-readme": "~0.4.5",
+    "grunt-umd": "~2.3.3",
+	
+    "karma": "~0.12.31",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  },
+  "scripts": {
+    "test": "grunt karma:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarcho/dataTables.multiSelect.git"
+  },
+  "keywords": [
+    "datatable",
+    "datatables.net",
+    "filter",
+    "multiselect"
+  ],
+  "author": "Omar Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omarcho/dataTables.multiSelect/issues"
+  },
+  "homepage": "https://github.com/omarcho/dataTables.multiSelect#readme"
+}
