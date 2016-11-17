@@ -5,7 +5,8 @@
 /**
  * DataTables integration for Bootstrap 3. This requires Bootstrap 3 and
  * DataTables 1.10 or newer.
- * for further information.
+ * for further information.  
+ 
  */
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
@@ -43,24 +44,24 @@ var DTMultiSelectColumnApi = function (instance, column, index) {
     };
 };
 
-DTMultiSelectColumnApi.prototype = {
+DTMultiSelectColumnApi.prototype = { 
+	
     _constructor: function () {
-        var self = this;
-        this.instance.multiselect({
+        var self = this; 
+        this.instance.multiselect({ 
             onDropdownShow: function () {
-                self.isChanging = true;
-            },
-            onDropdownHidden: function () {
+                self.isChanging = true;  
+            }, 
+            onDropdownHidden: function () { 
                 self.isChanging = false;
                 self._update();
-            },
-            //enableFiltering: true, __buttonWidth: '190px'
+            }
         });
         this.instance.on('change', function () {
                 this.search();
-            }.bind(this)
+            }.bind(this) 
         );
-    },
+    }, 
     _getSearchText: function () {
         var arr = this._getSearchList();
         var val = "";
@@ -146,7 +147,7 @@ DTMultiSelectApi.prototype = {
             }
             self.s.recordsDisplay = settings.fnRecordsDisplay();
         });
-       self._draw();
+		self._draw();
     },
     _init: function () {
         var self = this;

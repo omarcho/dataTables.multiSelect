@@ -16,6 +16,6 @@ $(document).ready(function() {
 		//scrollY:'100%',
 		//scrollX: true,
 		//scrollCollapse:true,
-		stateSave:false
+		stateSave:true
 	});
 } );
