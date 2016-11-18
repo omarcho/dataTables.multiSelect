@@ -34,6 +34,12 @@ $(document).ready(function() {
 		//scrollY:'100%',
 		//scrollX: true,
 		//scrollCollapse:true,
-		stateSave:true
+		stateSave:true,
+		multiSelect:{
+			multiSelectOptions:[
+				{selector:"#name", col:0},
+				{selector:"#office", col:2}
+			]
+		}
 	});
 } );
