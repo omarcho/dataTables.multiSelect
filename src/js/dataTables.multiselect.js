@@ -1,18 +1,27 @@
-/*! DataTables MultiSelect integration
+/*! DataTables Bootstrap MultiSelect integration
  * 
  */
 
 /**
- * DataTables integration for Bootstrap 3. This requires Bootstrap 3 and
+ * DataTables integration for Bootstrap MultiSelect. This requires Bootstrap MultiSelect (and dependencies) and
  * DataTables 1.10 or newer.
  * for further information.  
- 
+ * https://github.com/omarcho/dataTables.multiSelect/
  */
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
-		// AMD
-	    define(['jquery', 'datatables.net', 'vendors/bootstrap-multiselect'], function ($) {
-			return factory( $, window, document );
+	    // AMD
+        // Workaraund in order to resolve bootstrap-multiselect dependencies since it is not AMD yet.
+	    define('multiselect-dependencies', ['jquery', 'datatables.net'], function ($) {
+	        //console.log("multiselect-dependencies: Loading");
+	    });
+	    define('multiselect', ['multiselect-dependencies', 'bootstrap-multiselect'], function ($) {
+	        //console.log("bootstrap-multiselect: Loaded");
+	    });
+	    define(['multiselect'], function () {
+	        //console.log("dataTables.multiSelect: Loading");
+	        return factory($, window, document);
+	        
 		} );
 	}
 	else {
