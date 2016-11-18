@@ -16,7 +16,9 @@ You need to be sure to include [JQuery](https://jquery.com/), [dataTables.net](h
 
 
 ## Examples
-###Default:
+###Basic:
+
+You can experiment with [Fiddle](https://jsfiddle.net/omarcho/kad40x9o/) as well.
 
 ```html
 	
