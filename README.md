@@ -19,7 +19,7 @@ You need to be sure to include [JQuery](https://jquery.com/), [dataTables.net](h
 ###Default:
 
 ```html
-	<!-- Setup column filters. Subfix refers to the column position. --!>
+	
 	<select id="maintable-quick-filter-0" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Name" style="display:none"></select>
 	<select id="maintable-quick-filter-1" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Position" style="display:none"></select>
 
