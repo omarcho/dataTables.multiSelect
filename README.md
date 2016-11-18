@@ -136,5 +136,3 @@ $(document).ready(function() {
 ```
 
 
-## Copyright
-Copyright (c) 2016 Triad, contributors. Released under the GPL-3.0 license 
