@@ -31,14 +31,14 @@ $(document).ready(function() {
             { title: "Salary" }
         ],
 		ordering:true,
-		//scrollY:'100%',
-		//scrollX: true,
-		//scrollCollapse:true,
+		scrollY:'100%',
+		scrollX: true,
+		scrollCollapse:true,
 		stateSave:true,
 		multiSelect:{
 			multiSelectOptions:[
-				{selector:"#name", col:0},
-				{selector:"#office", col:2}
+				{selector:".name", col:0},
+				{selector:".office", col:2}
 			]
 		}
 	});
