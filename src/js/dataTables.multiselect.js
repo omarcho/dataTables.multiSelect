@@ -11,7 +11,7 @@
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 	    // AMD
-        // Workaraund in order to resolve bootstrap-multiselect dependencies since it is not AMD yet.
+        // Workaround in order to resolve bootstrap-multiselect dependencies since it is not AMD yet.
 	    define('multiselect-dependencies', ['jquery', 'datatables.net'], function ($) {
 	        //console.log("multiselect-dependencies: Loading");
 	    });
